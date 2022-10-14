@@ -15,6 +15,6 @@ import './index.css'
 const root = createRoot(document.getElementById('root'))
 root.render(
     <StrictMode>
-        <FirstApp/>
+        <FirstApp title="ELDEN RING" subTitle={123}/>
     </StrictMode>
 );
