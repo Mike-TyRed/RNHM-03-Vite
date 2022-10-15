@@ -1,8 +1,9 @@
 import React, { StrictMode } from 'react'
 //Llamada al React DOM para renderizar los componentes
 import {createRoot} from 'react-dom/client'
-import { FirstApp } from './FirstApp'
-import { HelloWorldApp } from './HelloWorldApp'
+import {CounterApp} from './CounterApp'
+//import { FirstApp } from './FirstApp'
+//import { HelloWorldApp } from './HelloWorldApp'
 
 //Importar CSS
 import './index.css'
@@ -15,6 +16,6 @@ import './index.css'
 const root = createRoot(document.getElementById('root'))
 root.render(
     <StrictMode>
-        <FirstApp title="ELDEN RING" subTitle={123}/>
+        <CounterApp value={50+50}/>
     </StrictMode>
 );

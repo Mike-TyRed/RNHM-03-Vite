@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 //Fragmento
 //<> </>
@@ -13,19 +12,26 @@ const newMessage = {
 } */
 
 //rafc
-export const FirstApp = ({title, subTitle}) => {
+export const FirstApp = ({title, subTitle, name}) => {
   //console.log(props);
   return (
     <>
       {/* <h1>{newPost()}</h1> renderizar un componente externo*/}
       <h1>{title}</h1>
       <p>{subTitle}</p>
+      <p>{name}</p>
     </>
   )
 }
 
-//aaaaaaaaaaaaa
+//
 FirstApp.propType = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.number,
+}
+
+FirstApp.defaultProps = {
+  name: "Elden Ring",
+  subTitle: "adsasd",
+  title: "Sin titulo",
 }
