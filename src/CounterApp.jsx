@@ -5,7 +5,7 @@ export const CounterApp = ({ value }) => {
   // Hook, declaracion de variable y funcion
   const [counter, setCounter] = useState(0);
   const handleAdd = () => {
-    console.log('render')
+    //console.log('render')
     //Actualiza el estado del componente
     setCounter(counter + 1);
     //setCounter((c)=>c+1);

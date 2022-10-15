@@ -16,6 +16,6 @@ import './index.css'
 const root = createRoot(document.getElementById('root'))
 root.render(
     <StrictMode>
-        <CounterApp value={50+50}/>
+        <CounterApp value={0}/>
     </StrictMode>
 );
